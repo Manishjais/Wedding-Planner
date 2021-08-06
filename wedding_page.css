@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior:smooth;
+}
+header{
+    position: fixed;
+    margin: 0px;
+    width: 100%;
+    z-index: 100000;
+    background-color: rgb(240, 206, 218);
+    padding : 10 px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: indigo;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 30%;
+}
+.navbar a:hover{
+    background-color: rgb(243, 234, 231);
+    padding: 3px;
+    color:pink;
+    
+}
+#menu-bar{
+    border-radius: .5rem;
+    color: rgb(2, 22, 22);
+    font-size: 3rem;
+    border:3px solid black;
+    padding: 2px;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 15px;
+
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926__340.jpg") no-repeat ;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+   
+}
+.home .content{
+    font-size: 2rem;
+    margin-left: 4%;
+}
+.home .content button{
+   
+  border: 5px solid rgb(22, 22, 24);
+    font-size: 1.7rem;
+    padding: 8px;
+   
+    
+}
+.home .content button:hover{
+    background-color: rgb(247, 242, 241);
+    padding: 5px;
+    cursor: pointer;
+    background-color: turquoise;
+}
+.step-conatainer{
+    display:flex;
+    align-items: center;justify-content: center;   
+    flex-wrap: wrap;
+    
+}
+.step-conatainer .step{
+   background-image: url(https://cdn.pixabay.com/photo/2020/02/20/17/57/flower-4865379__340.png);
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-color: rgb(123, 125, 209);
+   color: rgb(237, 237, 250);
+    margin: 40px;
+    
+    padding: 6%;
+    border: 20%;
+    box-shadow:5px cadetblue;
+    text-align: center;
+    border: 12px solid white;
+}
+.step-conatainer .step h2{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(229, 135, 241);
+    padding: 20px;
+    
+}
+.step-conatainer .step span{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+body{
+    background-color: rgb(19, 19, 43);
+}
+.step-conatainer .step button{
+   
+    font-size: 1.7rem;
+    padding: 8px;
+    margin:15px;
+    background-color: rgb(240, 223, 226);
+    border: 5px solid black;
+}
+.step-conatainer .step button:hover{
+    background-color: rgb(166, 221, 209);
+    cursor: pointer;
+    padding: 3px;
+}
+.vender{
+    background-color: pink;
+    margin: 45px;
+    border: 8px solid white;
+}
+.vender .heading{
+    display: flex;
+
+    justify-content: center;
+  font-size: xx-large;
+    align-items: center;
+  
+}
+.vender .venderboxcontainer{
+    background-color: rgb(134, 141, 235);
+    
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30%;
+    
+}
+.vender .venderboxcontainer .box{
+    flex:1 1 250px;
+    margin: 45px;
+    border: 10px black solid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+    height: 330px;
+    
+}
+.vender .venderboxcontainer .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.vender .venderboxcontainer .box img:hover{
+    transform: scale(1,3);
+    
+}
+.vender .venderboxcontainer .box .info{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  
+    text-align: center;
+    transform: scale(1,3);
+    opacity: 0;
+}
+.vender .venderboxcontainer .box .info:hover{
+    transform: scale(1);
+    opacity: .6;
+}
+
+.vender .venderboxcontainer .box .info button{
+    padding: 10px;
+    background-color: pink;
+    cursor: pointer;
+    border: 5px black solid;
+    margin:10px;
+}
+.vender .venderboxcontainer .box .info button:hover{
+    padding: 15px;
+    background-color: rgb(66, 55, 219);
+    cursor: pointer;
+    border: 8px black solid;
+    margin:10px;
+}
+/*client section*/
+.clients{
+    background-color: pink;
+    margin: 40px;
+}
+.clients .row{
+    display: flex;
+    border-radius: 20%;
+    background-color: rgb(7, 7, 37);
+    margin:30px
+}
+.clients .row .heading{
+    width: 100%;
+}
+.clients .row .dividor{
+    padding: 0%;
+    
+}
+.clients .row .box-conatainer .box{
+    padding: 20px;
+    margin:25px
+}
+.clients .row .box-conatainer .box img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    border:white 20px solid;
+    
+}
+.clients .row .box-conatainer .box .info{
+    padding: 40px;
+}
+.clients .row .box-conatainer .box .info {
+    font-style: italic;
+    color: white;
+}
+.clients .row .box-conatainer .box .info h2{
+    font-size: x-large;
+    margin:15px;
+}
+
+.conatact .heading{
+  color: white;
+    text-align: center;
+    font-size: xx-large;
+  
+}
+.conatact form{
+    padding: 60px;
+    border-radius: 20%;
+    text-align: center;
+}
+.conatact form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    
+}
+.conatact form .inputbox input{
+    width: 46%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+}
+.conatact form textarea{
+   padding: 25px;
+    width: 97%;
+    height: 100px;
+    resize: none;
+}
+.footer{
+    padding: 30px 20px;
+    background-color: rgb(173, 169, 169);
+}
+.footer .row img{
+    width: 60px;
+    padding: 3px;
+}
+.footer .row img:hover{
+    padding: 8px;
+    cursor: pointer;
+}
+.footer .row {
+    font-size: 30px;
+}
+.footer .row  p{
+    font-size: 13px;
+}
+
+
+/*media query*/
+@media only screen and (max-width: 700px) {
+    .clients .row{
+        flex-direction: column;
+    }
+    .navbar a{
+       
+        font-size: 1rem;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 30%;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .navbar a{
+       font-size: .8 rem;
+        margin-right: 5px;
+        padding: 2px;
+        border-radius: 30%;
+    }
+    .clients{
+        margin: 20px;
+    }
+    .clients .row{
+        margin:10px;
+        border-radius: 5%;
+    }
+    .clients .row .box-conatainer .box{
+        padding: 5px;
+        margin:20px
+    }
+    .clients .row .box-conatainer .box .info{
+        padding: 20px;
+    }
+    .vender{
+       margin: 1px;
+    }
+    .vender .venderboxcontainer{
+        margin: 5px;
+    }
+    .vender .venderboxcontainer .box{
+      margin: 5px;
+    }
+    .vender .heading{
+      font-size: x-large
+      
+    }
+}
+@media only screen and (max-width: 350px) {
+    .navbar a{
+       display: none;
+     }
+}
